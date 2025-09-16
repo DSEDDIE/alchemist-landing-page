@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
                 </GoldenButton>
               </a>
               <GoldenButton variant="outline-gold" className="px-10 py-4 text-base">
-                Call Now: +1 (929) 520-0087
+                Call Now: +1 (646) 640-0380
               </GoldenButton>
             </div>
           </div>
