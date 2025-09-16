@@ -53,13 +53,13 @@ export const Header: React.FC = () => {
             >
               Get a Quote
             </GoldenButton>
-            <a href="tel:+19295200087">
+            <a href="tel:+16466400380">
               <GoldenButton
                 variant="outline-gold"
                 className="text-xs px-4 py-2"
                 type="button"
               >
-                Call Now: +1 (929) 520-0087
+                Call Now: +1 (646) 640-0380
               </GoldenButton>
             </a>
           </div>
