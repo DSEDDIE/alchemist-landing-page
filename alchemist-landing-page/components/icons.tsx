@@ -32,7 +32,17 @@ export const QuoteIcon: React.FC<{ className?: string }> = ({ className }) => (
 );
 
 export const TelescopeIcon: React.FC<{ className?: string }> = ({ className }) => (
-  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 6.5c1.02 0 1.95.17 2.81.49L12.5 9.32l1.41 1.41 2.33-2.33C16.83 9.05 17 9.98 17 11c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.02.17-1.95.49-2.81L7.17 5.86 5.86 7.17l2.33 2.33C9.05 8.17 9.98 8 11 8c.34 0 .67.04 1 .09V6.5zm-1-3.21C9.04 2.81 7.97 2.5 6.83 2.5c-3.13 0-5.67 2.54-5.67 5.67S3.7 13.83 6.83 13.83c1.13 0 2.2-.31 3.17-.83L12 15l2-2-1.99-1.99L11 9.92V6.5c0-.46-.03-.91-.09-1.36L11 3.29zM20.5 2c-1.8 0-3.39.85-4.44 2.16l-1.02-.99C14.78 2.54 14.19 2 13.5 2c-.68 0-1.28.53-1.63 1.25L10.5 5.17l1.41 1.41.62-.62c.2-.2.51-.2.71 0l2.12 2.12c.2.2.2.51 0 .71l-1.34 1.34L17 13.2V17h-3.8l3.09 3.09c.63.63 1.47.91 2.46.91 1.66 0 3-1.34 3-3 0-.99-.28-1.83-.91-2.46L19 13.09V10c0-.8-.47-1.51-1.19-1.82l.99-1.02C19.65 5.39 20.5 3.8 20.5 2z"/>
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    {/* Simple telescope illustration: diagonal tube, lens circle, and tripod legs */}
+    <g strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      {/* Tube */}
+      <path d="M3 14l8-4 6-3" />
+      {/* Lens at front */}
+      <circle cx="18" cy="5" r="2" fill="currentColor" />
+      {/* Tripod / stand */}
+      <path d="M11 14l-3 6" />
+      <path d="M15 13l4 7" />
+      <path d="M11 14l4-1" />
+    </g>
   </svg>
 );

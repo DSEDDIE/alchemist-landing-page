@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
 import { GoldenButton } from './GoldenButton';
+// Create a multi-step quote wizard component called QuoteWizard.jsx.
+// It should include:
+// - step navigation (next, back)
+// - state for form data
+// - steps: dimensions, substrate, system type, timeline, budget, photo upload
+// - final step: contact info (name, email, phone)
+// - after final submit, send data to an API route /api/quote
+// - use a modal overlay with a centered card
+// - animate transitions between steps using Framer Motion
 
 export const ContactSection: React.FC = () => {
   const [phone, setPhone] = useState('');

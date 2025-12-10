@@ -10,6 +10,12 @@ export interface Service {
   title: string;
   description: string;
   highlighted?: boolean;
+  // Optional per-service CSS class overrides for fine-grained control
+  containerClass?: string;
+  imageClass?: string;
+  titleClass?: string;
+  descriptionClass?: string;
+  linkClass?: string;
 }
 
 export interface Testimonial {
