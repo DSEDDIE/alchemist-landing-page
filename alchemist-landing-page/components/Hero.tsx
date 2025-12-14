@@ -24,24 +24,33 @@ export const Hero: React.FC = () => {
             <p className="body-text mx-auto md:mx-0">
               <strong>We also specialize in custom epoxy countertops—from kitchen islands to bar tops—crafted for beauty, durability, and everyday performance.</strong>
             </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
-              <a href="#quote-form">
-                <GoldenButton className="px-10 py-4 text-base">
-                  Get a Quote
-                </GoldenButton>
-              </a>
-              <GoldenButton variant="outline-gold" className="px-10 py-4 text-base">
-                Call Now: +1 (646) 640-0380
-              </GoldenButton>
-            </div>
+            {/* CTAs removed from hero section; header CTAs remain. Content flows cleanly. */}
           </div>
           <div className="flex justify-center md:justify-end">
-            <QuoteForm
-              title="Get A FREE Quote!"
-              subtitle=" "
-              note=""
-              formContext="hero"
-            />
+            <div className="bg-[#1C1C1C] p-0 md:p-0 rounded-xl shadow-2xl w-full max-w-md overflow-hidden" id="quote-form">
+              {/* Video at the top of the card */}
+              <div className="relative mx-auto w-[92%] md:w-[85%]" style={{ aspectRatio: '9/16', minHeight: '340px', maxHeight: '520px', overflow: 'hidden' }}>
+                  <video
+                    className="w-full h-full object-cover rounded-t-xl"
+                    src="/hero-video.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                  />
+                <div className="absolute inset-0 bg-black bg-opacity-25 rounded-t-xl pointer-events-none"></div>
+              </div>
+              {/* QuoteForm with two-stage flow, no title or subtitle */}
+              <QuoteForm
+                title=""
+                subtitle=""
+                note=""
+                formContext="hero"
+                twoStage
+                className="pt-0 pb-2"
+              />
+            </div>
           </div>
         </div>
       </div>

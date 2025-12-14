@@ -2,12 +2,12 @@
 import React from 'react';
 
 const imageUrls = [
-  '/image9.png',
-  '/image10.png',
-  '/image11.png',
-  '/image12.png',
-  '/image13.png',
-  '/image14.png',
+  '/METALLIC SWIRL.jpg',
+  '/metallicgray.jpeg',
+  '/IMG_2872.JPEG',
+  '/warehouse.jpeg',
+  '/IMG_2960.JPEG',
+  '/IMG_2965.JPEG',
 ];
 
 export const ImageGallery: React.FC = () => {
@@ -20,7 +20,7 @@ export const ImageGallery: React.FC = () => {
               <img 
                 src={url} 
                 alt={`Gallery image ${index + 1}`} 
-                className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-[1.30]"
               />
             </div>
           ))}

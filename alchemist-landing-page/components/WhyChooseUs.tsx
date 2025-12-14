@@ -1,7 +1,9 @@
 
 import React from 'react';
 import { GoldenButton } from './GoldenButton';
+
 import { SectionTitle } from './SectionTitle';
+import { ImageStack } from './ImageStack';
 
 export const WhyChooseUs: React.FC = () => {
   return (
@@ -35,11 +37,7 @@ export const WhyChooseUs: React.FC = () => {
 
             </div>
           </div>
-          <div className="grid grid-cols-1 grid-rows-1 gap-4 h-[330px] md:h-[560px]">
-            <div className="col-span-1 row-span-1 rounded-xl overflow-hidden shadow-lg">
-                <img src="/Group2.png" alt="Epoxy floor detail" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300" />
-            </div>
-          </div>
+          <ImageStack />
         </div>
       </div>
     </section>

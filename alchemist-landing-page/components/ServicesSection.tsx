@@ -16,15 +16,11 @@ const servicesData: Service[] = [
 			'Enhance the beauty and durability of your homes floors with our residential SUBTLE METALLIC epoxy flooring system. Our skilled craftsmen create stunning designs that not only elevate the aesthetics of your living spaces but also provide a long-lasting and easy-to-maintain surface',
 	},
 	{
-		id: '2',
-		imageSrc: 'BWGIMG_5816.jpeg',
-		title: 'COMMERCIAL EPOXY FLOORING',
-		description:
-			'Make a lasting impression on your clients and employees with our commercial ELEGANCE METALLIC SWIRL epoxy flooring system. Our team understands the unique challenges that commercial spaces face, and we tailor our services to meet your specific needs.',
-		// example of adding per-card CSS overrides (optional)
-		containerClass: 'bg-gradient-to-br from-[#111111] to-[#121212]',
-		// ensure this title uses the same gold color and weight as others
-		titleClass: 'text-2xl font-semibold text-[#D1A054] mb-3',
+			id: '2',
+			imageSrc: 'BWGIMG_5816.jpeg',
+			title: 'COMMERCIAL EPOXY FLOORING',
+			description:
+				'Make a lasting impression on your clients and employees with our commercial ELEGANCE METALLIC SWIRL epoxy flooring system. Our team understands the unique challenges that commercial spaces face, and we tailor our services to meet your specific needs.',
 	},
 	{
 		id: '3',

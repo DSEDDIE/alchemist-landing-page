@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
 import { FaqItemData } from '../types';
 import { SectionTitle } from './SectionTitle';
-import { QuoteForm } from './QuoteForm';
+
 import { ChevronDownIcon, ChevronUpIcon } from './icons';
 
 const faqData: FaqItemData[] = [
   {
     id: '1',
     question: 'WHAT SERVICES DO WE OFFER?',
-    answer: 'At ALCHEMIST Resin , we specialize in premium epoxy flooring and concrete solutions for both residential and commercial spaces. From stunning, easy-to-maintain residential epoxy floors to durable, high-performance commercial coatings, our team delivers custom results tailored to your needs. We also offer garage floor epoxy for added protection and a polished finish, as well as concrete sealing services that extend the life of your surfaces by shielding them from moisture, stains, and wear. No matter the project, we are here to elevate your space with quality craftsmanship and lasting value.',
+    answer: 'In addition to epoxy flooring and concrete coatings, Alchemist Resin offers a wide range of surface transformation solutions designed to upgrade existing spaces without unnecessary demolition. We specialize in custom concrete countertops, bar tops, and work surfaces tailored to each project’s design and functional needs.\n\nOur team also performs bathroom makeovers and surface refinishing directly over existing tile, creating seamless, modern finishes without the cost or disruption of full tear-outs. For floors and exterior surfaces, we provide concrete overlays and asphalt repair using high-performance coating systems engineered for durability, adhesion, and long-term wear.\n\nWhether it’s a countertop, bar top, floor, or resurfacing project, every application is carefully prepared and executed with the same attention to detail and craftsmanship that defines our work.',
   },
   {
     id: '2',
     question: 'WHAT AREAS DO WE SERVE?',
-    answer: 'ALCHEMIST Resin proudly serves homeowners and businesses throughout New York city , bringing expert decorative concrete and epoxy flooring solutions to a wide range of communities If you are located near our service area but do not see your city listed, do not hesitate to contact us — we are always open to taking on projects throughout the region.',
+    answer: 'Alchemist Resin proudly serves residential and commercial clients throughout New York City, all of New York State, and the greater Tri-State Area. Our team provides premium epoxy flooring and concrete coating solutions across New York, New Jersey, and Connecticut, delivering the same level of craftsmanship, preparation, and attention to detail on every project.\n\nIf your property is located anywhere within our service region, we’re equipped to bring our expertise directly to you. For projects outside the immediate area, availability is considered on a case-by-case basis.',
   },
   {
     id: '3',
     question: 'WHAT SETS US APART FROM OTHER OPTIONS?',
-    answer: 'What sets ALCHEMIST Resin apart is our commitment to quality, customization, and customer care. We do not believe in one-size-fits-all solutions—every project is tailored to match your specific vision and needs. Leading our team is Ed , an experienced operator with over 5 years in the decorative concrete and epoxy flooring industry. His hands-on expertise, eye for detail, and dedication to doing things right the first time ensure that every client receives top-tier workmanship and a smooth, stress-free experience. From your first consultation to the final coat, we deliver lasting results you can count on.',
+    answer: 'What sets Alchemist Resin apart is our commitment to craftsmanship, materials, and preparation—never shortcuts. Every project begins with industrial-grade surface preparation, because long-lasting epoxy systems depend on what happens before the coating is ever applied.\n\nWe use high-performance, professional-grade materials designed for durability, adhesion, and long-term wear—not off-the-shelf products. Our team takes additional steps during installation to ensure proper bonding, even coverage, and a finish that performs as well as it looks.\n\nFrom residential spaces to demanding commercial environments, we approach every floor with precision, care, and respect for the material. The result is a surface built to withstand daily use, moisture, and impact—crafted to last, not just to impress on day one.',
   },
 ];
 
@@ -70,12 +70,7 @@ export const FaqSection: React.FC = () => {
               ))}
             </div>
           </div>
-          <div className="mt-12 lg:mt-0 flex justify-center lg:justify-end">
-             <QuoteForm
-              title="GET A QUOTE NOW!"
-              formContext="faq"
-            />
-          </div>
+          {/* Removed embedded quote form for FAQ section as requested. FAQ layout and spacing preserved. */}
         </div>
       </div>
     </section>
