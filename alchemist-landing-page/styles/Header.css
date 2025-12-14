@@ -1,7 +1,38 @@
 /* Ya jahan bhi aap header ka CSS likhte hain */
 
 .header {
+  position: relative;
   height: 150px; /* Apni desired height dalen, jaise 100px */
-  min-height: 150px;
+  min-height: 112px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   /* ...baaki styling... */
+}
+
+.header img {
+  max-height: 80px;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  /* Remove transforms if any */
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .site-header,
+  .header,
+  .navbar {
+    min-height: 80px;
+    padding: 12px 20px;
+  }
+
+  .header-logo img {
+    max-height: 56px;
+  }
 }

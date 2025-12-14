@@ -14,8 +14,15 @@ export const WhyChooseUs: React.FC = () => {
               className="mb-6 text-left drop-shadow-[0_0_16px_rgba(209,160,84,0.55)] animate-pulse"
               useGradient={true}
             />
-            <p className="text-gray-300 mb-8 leading-relaxed">
-               At the heart of everything we do is a commitment to quality, trust, and customer satisfaction. We stand out by delivering personalized solutions tailored to your unique needs, backed by years of experience and a passion for excellence. Our team goes the extra mile to ensure timely service, transparent communication, and long-term value. When you choose us, you're not just selecting a service you're choosing a reliable partner who cares about your success.</p>
+            <p className="text-gray-300 mt-4 leading-relaxed">
+              Custom epoxy and high-performance coating systems for homes and businesses—built to last and made to impress.
+            </p>
+            <p className="text-gray-300 mt-2 leading-relaxed">
+              We deliver tailored finishes, reliable service, and expert craftsmanship for any space.
+            </p>
+            <p className="text-gray-300 mt-2 leading-relaxed mb-8">
+              Your surface, transformed with intention and quality.
+            </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a href="#quote-form">
                 <GoldenButton className="px-10 py-4 text-base">
